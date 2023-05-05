@@ -1,0 +1,74 @@
+body{
+    width: 85%;
+    margin: auto;
+  }
+    h1{
+        color:rgb(10, 10, 113);
+        background-color: rgb(135, 125, 222);
+        font-family: Arial;
+        font-size: 22px;
+        margin-bottom: 23px;
+        border-bottom-color: rgb(10, 10, 113);
+        border-bottom-style: groove;
+        border-bottom-width: 3px;
+        padding-left: 14px;
+        margin-top: 32px;
+    }
+   .joao{
+        background-color: rgb(135, 125, 222);
+        font-family: sans-serif;
+        border: none;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    #brasileiro{
+        text-align: center;
+        margin-top: 0;
+        background-color: rgb(158, 150, 230);
+        padding: 5px;
+        margin-bottom: 30px;
+    }
+    .menu{
+        text-align: right;
+    }
+    .menu li{
+        list-style-type: none;
+        display:inline-block;
+        padding:0;
+    }
+    .menu a{
+        background-color: rgb(195, 192, 192);
+        padding: 16px;
+    }
+    .menu a:hover{
+        color:aliceblue;
+        background-color: rgb(45, 43, 43);
+        text-decoration: none;
+    }
+    p{
+        font-family: Arial;
+        font-size: 10px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+    h2{
+        font-family: Arial;
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    h3{
+        font-family: Arial;
+        font-size: 11px;
+    }
+    ul{
+        padding-left: 0;
+    }
+    li{
+        list-style-position: inside;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
