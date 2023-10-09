@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modal.css">
+    <title>Closet Virtual</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>FashionFacil</h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Seu Perfil</a></li> 
+                    <li class="nav-item"><a href="#" class="nav-link">Usuarios</a></li> 
+                    <li class="nav-item"><a href="#" class="nav-link">Carrinho</a></li> 
+                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li> 
+                </ul>
+            </div>
+        <div class="login-button">
+            <button><a href="#">Anunciar</a></button>
+        </div>
+        
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="" alt=""></button>
+        </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Seu Perfil</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link">Usuarios</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link">Carrinho</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li> 
+            </ul>
+            <div class="login-button">
+                <button onclick="teste()"><a href= "#" >Anunciar</a></button>
+            </div>
+        </div>
+    </header>
+    <main id="container-card" class="cards">
+        <section class="card" id="cardExcluido">
+            <div class="icon">
+                <img src="" alt="Cadatre um Produto">
+            </div>
+            <button onclick="teste()"  class="cadastrarPd">cadastrar</button>
+        </section>
+
+        <section class="card" id="cardExcluido2">
+            <div class="icon">
+                <img src="/image/richarlisson.jpeg" alt="cadatrar produto">
+            </div>
+            <h3>R$340.59</h3>
+            <span>Conjunto estiloso</span>
+            <button onclick="teste()" class="cadastrarPd">Learn Mores</button>
+        </section>
+
+        <section class="card" id="cardExcluido3">
+            <div class="icon">
+                <img src="/image/richarlisson.jpeg" alt="cadatrar produto">
+            </div>
+            <h3>R$270,50</h3>
+            <span>Conjunto casual.</span>
+            <button onclick="teste()"  class="cadastrarPd">Learn Mores</button>
+        </section>
+
+    
+
+        <section id="modaljs" class="modal">
+  
+            <div class="popUp">
+                <div class="titulo">
+                    <h2>Cadastre seu produto</h2>
+                    <button class="fecharpopUp" id="fecharPop">X</button>
+                </div>
+                <form class="formulario">
+                    <div class="formCt">
+                            <div class="label-quadrado"> 
+                                <input type="text" id="nomeProd" placeholder=" " required>
+                                <label id="labelProd" for="nomeProd">Nome do Produto</label>
+                              
+                            </div>
+                        
+                            <div class="label-quadrado">
+                                <input type="number" id="precoProd" placeholder=" " required>
+                                <label id="labelPrice" for="precoProd">Preço</label>
+                                
+                            </div>
+                        
+                            <div class="label-quadrado">
+                                <input type="text" id="dscProd" placeholder=" " required>
+                                <label id="labelDsc" for="dscProd">Descrição</label>
+                                
+                            </div>
+                            <button onclick="saveProduct()" class="btnProduto">Postar</button>
+                    </div>
+                    <div class="upload">
+                        <label class="picture" for="picture_input" tabIndex="0">
+                            <span class="picture_image">Escolha um arquivo</span>
+                        </label>
+                        <input type="file" accept="image/*" id="picture_input">
+                    </div>
+                </div>
+            </form>
+    </section>
+</main>
+    <script src="modal.js"></script>
+</body>
+</html>
